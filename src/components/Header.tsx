@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { ShoppingCart, Menu, X, Search, Cpu } from "lucide-react";
+import { ShoppingCart, Menu, X, Search, Cpu, UserCog } from "lucide-react";
 import { useCart } from "../context/CartContext";
 
 export default function Header() {
@@ -54,6 +54,10 @@ export default function Header() {
           >
             <Search size={20} />
           </button>
+
+          <Link to="/admin" className="icon-btn" aria-label="Админ панель" title="Админ панель">
+            <UserCog size={20} />
+          </Link>
 
           <Link to="/cart" className="icon-btn cart-btn">
             <ShoppingCart size={20} />

@@ -42,6 +42,7 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <p>&copy; 2026 TechStore. Бардык укуктар корголгон.</p>
+        <Link to="/admin" className="footer-admin-link">Админ панель</Link>
       </div>
     </footer>
   );
